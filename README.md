@@ -1,12 +1,4 @@
 # Pacdev
-## Table of Content 
-
-* [Q1](#question-1)
-* [Q2](#question-2)
-* [Q3](#question-3)
-* [Q4](#question-4)
-* [Q5](#question-5)
-
 
 ## Question 1 <br>
 Fit a simple linear regression model of price ~ sqft. Interpret the coefficients for the intercept and sqft.
