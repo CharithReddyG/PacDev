@@ -1,6 +1,12 @@
 # Pacdev
-[Q1](#Question-1) <br>
-[Q2](#Question-2) <br>
+## Table of Content 
+
+* [Q1](#question-1)
+* [Q2](#question-2)
+* [Q3](#question-3)
+* [Q4](#question-4)
+* [Q5](#question-5)
+
 
 ## Question 1 <br>
 Fit a simple linear regression model of price ~ sqft. Interpret the coefficients for the intercept and sqft.
@@ -138,7 +144,7 @@ lm(price ~ center_sqft + city + pool + garage + center_bed + center_bath + price
 7.center_bed: As we can see and interpret that for every additional bedroom above the average, the price of house increases by approximately $42, holding all other variables fixed. However the number of bedrooms may have a less impact on the price of the house in this model.                    
 8.center_bath: We can estimate that for every additional bathroom above the average, the price of a house decreases by approximately by $3,093, holding all other variables fixed. However this effect is not statistically significant because of the p-value, so we cannot perfectly estimate the house of the price within this model.
 
-## Q3 <br>
+## Question 3 <br>
 
 To the above model add an interaction between centered sqft and city. This means that you combine these terms multiplicatively (*) rather than additively (+). There should be 9 coefficients in the model.
 
@@ -207,7 +213,7 @@ center_sqft:cityWestwood: The coefficent of 37.95 indicates that for each extra 
 
 Also, from the plot visually we can observe that Santa Monica and Westwood showing steeper slopes compared to Long Beach, which shows that there is an additional increase in price per square foot in those cities than Long Beach. In conclusion, we can observe that the Santa Monica's line is the steepest, followed by Westwood and then Long Beach, which matches the interpretation of the coefficients from our output. 
 
-## Q4 <br>
+## Question 4 <br>
 
 Is this a good model? To assess the interaction model fit create a residual plot with model residuals on the vertical axis and the fitted values on the horizontal axis. One easy way to get a residual plot in R is to use plot(model, which = 1). Comment on model fit.
 
@@ -221,7 +227,7 @@ plot(int_model, which = 1)
 
 The above residual plot shows the representation of residulas on the vertical axis and the fitted values on the horizontal axis. The residuals appears to be randomly scattered around the line of zero with no obvious pattern or constant variance. But there seems to be a wider spread in the residuals as we move to the right side of the plot. The plot also shows a few points that are far away from the majority of the data points. These could be outliers in this model. The residual plot also suggests that the relationship between the predictor variables and response variables may be non-linear because of the funnel shape, where the variance of the residuals increases with the fitted values.The increasing residual variance suggests that the model's predictive accuracy varies across different levels of the response variable, which is not ideal. In conclusion, I can say that the current model is good model as the most of the data fits around the line of 0 with no patterns, but this could also be improved by reducing the outliers as they might effect the model accuracy and adding the missing variables which could capture the Underlying relationships.
 
-## Q5 <br>
+## Question 5 <br>
 What should Andrew say in his presentation? Write a brief summary of the quantitative evidence that he should use to support this recommendation.
 
 
