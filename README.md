@@ -1,14 +1,6 @@
 # Pacdev
 
 
-```r
-#installing libraries and packages
-library(tidyverse)
-library(dplyr)
-library(ggplot2)
-pac <- read_csv("pacdev_data.csv") #reading the data from the pacdev_data file
-```
-
 ## Q1 <br>
 Fit a simple linear regression model of price ~ sqft. Interpret the coefficients for the intercept and sqft.
 To interpret model coefficients in this case study means: write down in concrete terms what each coefficient says about the value of a home, or the change in the value of a home, conditional on predictors. For example, suppose the coefficient for x is 1.5. To interpret this number would entail saying something like this: “An increase in 1 in x is associated with a change of 1.5 in y, on average, holding the other predictors constant.”
