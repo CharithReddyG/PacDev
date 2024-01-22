@@ -1,24 +1,5 @@
 #Pacdev
----
-title: "PacDev_Case "
-author: "Charith Reddy Gopavaram "
-date: "01/21/2024"
-output: 
-  html_document: 
-    toc: true
-    keep_md: true
----
 
-
-
-
-```r
-#installing libraries and packages
-library(tidyverse)
-library(dplyr)
-library(ggplot2)
-pac <- read_csv("pacdev_data.csv") #reading the data from the pacdev_data file
-```
 
 ## Q1
 Fit a simple linear regression model of price ~ sqft. Interpret the coefficients for the intercept and sqft.
