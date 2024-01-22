@@ -1,6 +1,6 @@
 # Pacdev
 [Q1](#Question-1) <br>
-[Q2](#Q-2)
+[Q2](#Question-2) <br>
 
 ## Question 1 <br>
 Fit a simple linear regression model of price ~ sqft. Interpret the coefficients for the intercept and sqft.
@@ -86,7 +86,7 @@ summary(center_model)
 
 In summary, we can say that the square footage is positively associated with the house price, and on average, each additional square foot is associated with an increase in house price by about $269.345, when all the other factors are held constant.
 
-## Q2 <br>
+## Question 2 <br>
 Fit a multiple regression model of price using all the available predictors. Center the numeric predictors. Interpret the 7 coefficients in this model.
 Remember that Long Beach is the (missing) reference city (assuming that factor levels have been assigned alphabetically).
 
